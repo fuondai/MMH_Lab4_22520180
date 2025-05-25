@@ -1,0 +1,33 @@
+
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+x509_extensions = v3_ca
+prompt = no
+
+[req_distinguished_name]
+C = VN
+ST = Hanoi
+L = Hanoi
+O = Extended Demo
+OU = Security Research
+CN = extended.example.com
+emailAddress = admin@example.com
+
+[v3_req]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth, clientAuth, codeSigning, emailProtection
+subjectAltName = @alt_names
+
+[v3_ca]
+basicConstraints = critical, CA:TRUE
+keyUsage = cRLSign, keyCertSign
+nsCertType = server, client, email, objsign
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer:always
+
+[alt_names]
+DNS.1 = extended.example.com
+DNS.2 = www.extended.example.com
+IP.1 = 192.168.1.1

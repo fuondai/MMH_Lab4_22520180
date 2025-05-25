@@ -1,0 +1,3 @@
+mask: ffffffff
+progress: 0x               0, 0.0000:                                         |predicted sig: 37712be86e2ce63fb116bf348f39860be1a4ac691a39eaf8c19303531ac7e005
+phuong dai 22520180\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x18&admin=true
